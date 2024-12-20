@@ -1,6 +1,6 @@
 import { collection, setDoc, doc } from "firebase/firestore";
-import { db } from "../firebase/config"; // Ruta al archivo config.js
-import products from "./products"; // Ruta al archivo products.js
+import { db } from "../firebase/config.js"; // Ruta al archivo config.js
+import products from "./products.js"; // Ruta al archivo products.js
 
 const uploadProductsToFirestore = async () => {
   const productsCollection = collection(db, "products");
